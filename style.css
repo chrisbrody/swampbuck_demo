@@ -1,0 +1,730 @@
+:root {
+    /* colors */
+    --lightgreen: #A2A293;
+    --green: rgb(90,105,71);
+    --orange: #F47821;
+    --white: #ffffff;
+    --grey_5: rgba(255, 255, 255, 0.5);
+    --dark: #231F20;
+
+    /* transitions */
+    --ease-in-out: all 0.3s ease-in-out
+}
+a.swamp_btn,
+button.swamp_btn {
+    background-color: var(--orange);
+    border: 1px solid transparent;
+    color: var(--white);
+    font-size: 22px;
+    padding: 5px 40px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+a.swamp_btn:hover,
+button.swamp_btn:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    border-color: var(--orange);
+}
+
+/* dark background var(--dark) */
+.white {
+    color: var(--white);
+}
+
+body {
+    font-family: calibri, sans-serif;
+}
+
+.Section1 {
+    background-image: url('https://swampbuckcamo.com/wp-content/uploads/2022/11/hero-image-2-scaled.jpg');
+    height: 475px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 12px solid var(--white);
+    position: relative;
+}
+.Section1 .overlay {
+    height: 800px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.middle {
+    transition: .5s ease;
+    position: absolute;
+    bottom: 8rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: var(--white);
+    font-weight: 600;
+    font-family: calibri, sans-serif;
+}
+
+.middle .text h1 {
+    font-size: 72px;
+    font-weight: 900;
+    margin-bottom: 0;
+
+}
+
+.middle .text p {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+@media(max-width:1000px) {
+    .middle .text h1 {
+        font-size: 48px;
+    }
+    .middle .text p {
+        font-size: 24px;
+        font-weight: 600;
+    }
+}
+
+
+@media(min-width:1000px) {
+    .Section1 {
+        height: 800px;
+    }
+}
+
+@media(min-width:1600px) {
+    .Section1 {
+        background-position: 0 -200px;
+    }
+}
+
+.Section2 {
+    border-top: 12px solid var(--orange);
+    border-bottom: 12px solid var(--orange);
+    background-color: #000;
+    padding: 0 50px;
+    color: var(--white);
+}
+
+/*.Section2 .col-xs-12 {
+    display: flex;
+    justify-content: center;
+}*/
+
+.Section2 .col-xs-12 img {
+    width: 100%;
+}
+
+.Section2 .row {
+    position: relative;
+    margin: 20px 0px;
+}
+
+h2.text-hunting {
+    font-size: 48px;
+}
+
+.Field-items {
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--ease-in-out);
+}
+.Field-items:hover {
+    border-color: var(--grey_5);
+}
+
+.Field-items a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.Field-items a:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.Section2 .overlay {
+    position: absolute;
+    background: #F47821b0;
+    width: 48%;
+    color: var(--white);
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+}
+.relative {
+    border: 1px solid transparent;
+    transition: var(--ease-in-out);
+}
+.relative:hover {
+    border-color: var(--grey_5);
+}
+
+@media(max-width:768px) {
+    .Section2 .overlay {
+        width: 95.5%;
+    }
+    .Section2 .relative {
+        position: relative;
+        margin-bottom: 2rem;
+    }
+}
+
+.Section3 {
+    border-bottom: 12px solid var(--orange);
+}
+
+.Buck-hunter {
+    background-image: url('https://swampbuckcamo.com/wp-content/uploads/2022/11/swampbuck_camo-scaled.jpg');
+    background-repeat: no-repeat;
+    height: 900px;
+    background-size: cover;
+    padding: 0px;
+}
+
+.Wild-outdoor {
+    background-image: url('https://swampbuckcamo.com/wp-content/uploads/2022/11/Big_buck-U.jpg');
+    background-repeat: no-repeat;
+    height: 900px;
+    background-size: cover;
+    position: relative;
+}
+
+.Section3 .Image-buck_items {
+    justify-content: center;
+    display: flex;
+    margin: 24px 0px;
+    align-items: center;
+    position: relative;
+}
+
+.Section3 .Image-buck_items img {
+    width: 100%;
+}
+
+.text-buck {
+    color: #000;
+}
+
+.Section3 .text-buck h2 {
+    font-size: 36px;
+    color: #000;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.text-buck li {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+}
+
+.text-buck p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+}
+
+.Section3 .Wild-outdoor .overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px 30px 0px 30px;
+    background-color: var(--orange);
+    color: #000;
+}
+
+.Section3 .Wild-outdoor .overlay h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--white);
+}
+
+.Section3 .Buck-hunter .overlay {
+    padding: 40px 100px;
+    background-color: #8A8A83b3;
+    width: 100%;
+    height: 100%;
+}
+
+.Icon-text {
+    position: absolute;
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+}
+
+.Icon-text .Icon-img img {
+    width: 100%;
+    padding: 10px;
+}
+
+.Icon-text-main h2 {
+    font-size: 34px;
+    font-weight: 900;
+}
+
+.Icon-text-main p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 7px;    
+}
+
+@media(max-width:1275px) {
+    .Section3 .Buck-hunter .overlay {
+        padding: 40px 25px;
+    }
+}
+
+@media(max-width:975px) {
+    .Section3 .Buck-hunter .overlay {
+        padding: 40px 10px;
+    }
+
+    .Wild-outdoor {
+        height: 0;
+    }
+}
+
+@media(max-width:500px) {
+    .Icon-text-main p {
+        font-size: 16px;  
+    }
+}
+
+.Section4 {
+    border-bottom: 12px solid var(--orange);
+    padding: 40px 0px;
+    background-color: #ffdabf;
+}
+
+.Wild-outdoors .Jay-gregory img,
+.Wild-outdoors .Wayatt img {
+    width: 100%;
+    border: 6px solid var(--orange);
+    height: 300px;
+}
+
+.Section4 .container-fluid {
+    padding: 0px 100px;
+}
+
+.col-12.Wild-img {
+    justify-content: center;
+    display: flex;
+    margin-top: -160px;
+}
+
+.Wild-outdoors .Wild-img img {
+    width: 25%;
+}
+
+.Wild-Gregory p {
+    color: #000;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.Jay-gregory h2,
+.Wayatt h2 {
+    text-align: center;
+}
+
+@media(max-width:975px) {
+    .col-12.Wild-img {
+        margin-top: 0;
+    }
+}
+
+@media(max-width:500px) {
+    .Wild-outdoors .Jay-gregory img,
+    .Wild-outdoors .Wayatt img {
+        height: 400px;
+    }
+}
+
+.Section5 {
+    border-bottom: 12px solid var(--orange);
+    padding: 40px 50px;
+    background-color: var(--dark);
+}
+
+.discout-form a.btn {
+    color: var(--white);
+    border: 1px solid var(--white);
+    margin-top: 10px;
+    border-radius: 0px;
+    width: 100%;
+    padding: 18px;
+    font-size: 24px;
+    transition: var(--ease-in-out);
+}
+
+.discout-form a.btn:hover {
+    color: var(--dark);
+    background-color: var(--white);
+}
+
+.discout-form input#exampleInputEmail1 {
+    border-radius: 0px;
+    border: 1px solid var(--dark);
+    padding: 18px;
+    font-size: 24px;
+}
+
+.First-save {
+    text-align: center;
+}
+
+.First-save h1 {
+    color: var(--orange);
+    font-weight: 900;
+    font-size: 64px;
+}
+
+.First-save h2 {
+    font-size: 54px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+@media(max-width:500px) {
+    .Section5 {
+        padding: 40px 15px;
+    }
+    .First-save h2 {
+        font-size: 42px;
+    }
+}
+
+.Section6 {
+    border-bottom: 12px solid var(--white);
+    background-color: var(--white);
+}
+
+.buck-Accessories {
+    margin: 0px;
+    padding: 0px;
+}
+
+.buck-Accessories img {
+    width: 100%;
+}
+
+.Geared-camo {
+    position: relative;
+    padding: 0px;
+}
+
+.row.Geared {
+    padding: 150px 20px 40px;
+    text-align: center;
+    margin: 0px;
+
+}
+
+.row.Geared h2 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.row.Geared h1 {
+    font-size: 64px;
+    font-weight: 900;
+    color: #EE2823;
+}
+
+.row.Moderen-stylish {
+    text-align: center;
+    margin: 0px;
+    color: var(--white);
+    font-size: 24px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.Moderen {
+    background-color: var(--orange);
+    padding: 20px;
+}
+
+.Patterns {
+    background-color: var(--green);
+    padding: 20px;
+}
+
+.Stylish {
+    background-color: var(--lightgreen);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .Geared p {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+@media(max-width:1200px) {
+    .row.Geared {
+        padding-top: 100px;
+    }
+    .row.Geared h2 {
+        font-size: 32px;
+    }
+}
+
+@media(max-width:1000px) {
+    .row.Geared {
+        padding-top: 50px;
+    }
+
+    .Moderen, .Patterns, .Stylish {
+        padding: 0;
+    }
+
+    .row .Geared p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:768px) {
+    .row.Geared {
+        padding-top: 100px;
+    }
+
+    .row.Moderen-stylish {
+        bottom: initial;
+    }
+    
+}
+
+.Section7 {
+    border-bottom: 12px solid var(--white);
+    background-color: var(--dark);
+    padding: 40px 0px;
+}
+
+.Wisconsin-hunter h1 {
+    color: var(--white);
+    font-size: 54px;
+    font-weight: 600;
+}
+
+.Wisconsin-hunter {
+    text-align: center;
+}
+
+.Wisconsin-hunter p {
+    font-size: 38px;
+    color: var(--white);
+    font-weight: 100;
+}
+
+@media(max-width:768px) {
+    .Section7 {
+        display: none;
+    }
+    
+}
+
+.Section8 {
+    border-bottom: 12px solid var(--white);
+    background-image: url('https://swampbuckcamo.com/wp-content/uploads/2022/11/swampbuck_camo-scaled.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.Get-buck h1 {
+    font-size: 38px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--white);
+    padding-bottom: 30px;
+}
+
+.Gear-buck img {
+    width: 100%;
+}
+
+.Gear-buck h1 {
+    font-size: 28px;
+    color: var(--white);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.Gear-buck-shop {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.Section8 .overlay {
+    background-color: #3c3c3cb3;
+    width: 100%;
+    height: 100%;
+    padding: 40px 0px;
+}
+@media(max-width:768px) {
+    .Gear-buck {
+        text-align: center;
+    }
+    .Gear-buck img {
+        width: 22%;
+        transform: rotate3d(0, 0, 1, 90deg);
+        margin: 60px 0;
+    }
+}
+
+.Section9 {
+    border-bottom: 12px solid var(--white);
+}
+
+.Tag-buck {
+    background-color: var(--lightgreen);
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.Tag-img img {
+    width: 100%;
+}
+
+.Tag-img {
+    padding: 0px;
+}
+
+
+.footer_wrapper {
+    background-color: var(--dark);
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0;
+    border-top: 10px solid #fff;
+}
+
+.footer_menu {
+    display: flex;
+}
+.footer_menu a:hover {
+    color: var(--orange);
+}
+
+.footer_menu_1 {
+    border-right:1px solid var(--white);
+    padding-right: 30px;
+}
+.footer_menu_2 {
+    padding-left: 30px;
+}
+
+.footer_menu_1,
+.footer_menu_2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_menu_1 a,
+.footer_menu_2 a {
+    color: var(--white);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.social {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.social a{
+    text-decoration: none;
+}
+
+.social a.insta {
+    padding-right: 10px;
+}
+
+.copyright {
+    background-color: var(--green);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 50px;
+}
+.fb {
+    background: url('https://swampbuckcamo.com/wp-content/themes/swampbuck_theme/images/social/fb.png') no-repeat 0 0;
+    height: 25px;
+    width: 25px;
+}
+.insta {
+    background: url('https://swampbuckcamo.com/wp-content/themes/swampbuck_theme/images/social/insatgram.png') no-repeat 0 0;
+}
+
+
+@media(max-width:900px) {
+    .footer_wrapper {
+        display: block;
+        text-align: center;
+    }
+    .footer_menu {
+        display: block;
+    }
+    .footer_menu_1 {
+        padding-right: 0;
+        padding-top: 25px;
+    }
+    .footer_menu_2 {
+        padding-left: 0;
+        padding-bottom: 25px;
+    }
+}
+
+@media(max-width:600px) {
+    .Section2 {
+        padding: 20px;
+    }
+
+    .Section3 .Buck-hunter .overlay {
+        padding: 20px 20px;
+    }
+
+    .middle .text a {
+        padding: 10px 10px;
+    }
+
+    .Section3 .Wild-outdoor .overlay h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .Section4 .container-fluid {
+        padding: 0px 20px;
+    }
+
+    .row.Geared {
+        padding: 50px 20px 40px;
+        margin-bottom: 50px;
+    }
+
+    .row.Geared h2 {
+        font-size: 36px;
+    }
+
+    .row.Geared h1 {
+        font-size: 44px;
+    }
+
+    .Gear-buck {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Gear-buck img {
+        width: 22%;
+        transform: rotate3d(0, 0, 1, 90deg);
+        margin: 60px 0;
+    }
+}
