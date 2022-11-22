@@ -183,12 +183,15 @@
             <h2>OFF YOUR FIRST ORDER</h2>
           </div>
           <div class="col-12 col-xs-12 col-lg-6 col-md-6 discout-form">
-            <form action="https://hooks.zapier.com/hooks/catch/5796958/bp7yghh/" method="post" enctype="multipart/form-data">
+            <form id="discount_code">
               <div class="form-group">
-                <input type="email" class="form-control" id="discountcode_email" name="discountcode_email" placeholder="Enter your email address" />
+                <input type="email" class="form-control" id="discountcode_email" name="email" placeholder="Enter your email address" />
               </div>
-              <input type="submit" name="submit" class="btn" value="GET DISCOUNT CODE">
+              <a class="btn" onclick="queryDiscountCode()">GET DISCOUNT CODE</a>
             </form>
+            <div id="reveal_discount_code">
+              <h3>Discount Code: Swamp20</h3>
+            </div>
           </div>
         </div>
       </div>
@@ -329,5 +332,49 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+
+        async function queryDiscountCode() {
+          // e.preventDefault()
+          const webhook_url = 'https://hooks.zapier.com/hooks/catch/5796958/bp7yghh/'
+          let user_email = document.getElementById("discountcode_email").value
+
+          console.log(user_email);
+
+          let msg = await getCode(webhook_url, user_email);
+          console.log(msg);
+
+          const discount_codeEl = document.getElementById("discount_code")
+          const reveal_discount_codeEl = document.getElementById("reveal_discount_code")
+
+          if(msg.status == 'success') {
+            console.log('success');
+            discount_codeEl.style.display = 'none'
+            reveal_discount_codeEl.style.display = 'block'
+          } else {
+
+          }
+        }
+
+        async function getCode(webhook_url, user_email) {
+          try {
+            console.log('getting code');
+            let res = await fetch(webhook_url, {
+              method: 'POST',
+              headers: {
+                'Accept': 'application/json',
+              },
+              body: JSON.stringify(user_email)
+            });
+            console.log('sending request');
+            return await res.json();
+          } catch (error) {
+            console.log(error);
+            // location.href = "https://" + new URL(location.href).hostname + "/" + location.href.split("/").slice(-1)[0].split("?")[0];
+          }
+        }
+
+    </script>
   </body>
 </html>

@@ -412,7 +412,7 @@ h2.text-hunting {
     background-color: #231F20;
 }
 
-.discout-form input.btn {
+.discout-form a.btn {
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
     margin-top: 10px;
@@ -449,6 +449,11 @@ h2.text-hunting {
     font-size: 46px;
     font-weight: 600;
     color: #FFFFFF;
+}
+
+#reveal_discount_code {
+    display: none;
+    color: #fff;
 }
 
 @media(max-width:500px) {
