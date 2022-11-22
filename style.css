@@ -804,4 +804,9 @@ footer #copyright {
         transform: rotate3d(0, 0, 1, 90deg);
         margin: 60px 0;
     }
+
+    .footer_menu_1 a,
+    .footer_menu_2 a {
+        font-size: 24px;
+    }
 }
