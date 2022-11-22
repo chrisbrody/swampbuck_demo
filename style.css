@@ -1,20 +1,8 @@
-:root {
-    /* colors */
-    --lightgreen: #A2A293;
-    --green: rgb(90,105,71);
-    --orange: #F47821;
-    --white: #ffffff;
-    --grey_5: rgba(255, 255, 255, 0.5);
-    --dark: #231F20;
-
-    /* transitions */
-    --ease-in-out: all 0.3s ease-in-out
-}
 a.swamp_btn,
 button.swamp_btn {
-    background-color: var(--orange);
+    background-color: #F47821;
     border: 1px solid transparent;
-    color: var(--white);
+    color: #FFFFFF;
     font-size: 22px;
     padding: 5px 40px;
     text-decoration: none;
@@ -22,18 +10,53 @@ button.swamp_btn {
 }
 a.swamp_btn:hover,
 button.swamp_btn:hover {
-    background-color: var(--white);
-    color: var(--orange);
-    border-color: var(--orange);
+    background-color: #FFFFFF;
+    color: #F47821;
+    border-color: #F47821;
 }
 
-/* dark background var(--dark) */
+/* dark background #231F20 */
 .white {
-    color: var(--white);
+    color: #FFFFFF;
 }
 
 body {
     font-family: calibri, sans-serif;
+}
+
+header .cart_things {
+    background: black;
+    display: flex;
+    justify-content: end;
+}
+
+#top-nav ul {
+    float: none;
+    margin: 0;
+}
+
+.logo_menu_wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul#menu-main-menu {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+ul#menu-main-menu li {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0 15px;
+}
+
+ul#menu-main-menu li a {
+    font-weight: 16px;
+    color: white;
+    text-decoration: none;
 }
 
 .Section1 {
@@ -42,7 +65,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-top: 12px solid var(--white);
+    border-top: 12px solid #FFFFFF;
     position: relative;
 }
 .Section1 .overlay {
@@ -57,7 +80,7 @@ body {
     left: 0;
     right: 0;
     text-align: center;
-    color: var(--white);
+    color: #FFFFFF;
     font-weight: 600;
     font-family: calibri, sans-serif;
 }
@@ -98,11 +121,11 @@ body {
 }
 
 .Section2 {
-    border-top: 12px solid var(--orange);
-    border-bottom: 12px solid var(--orange);
+    border-top: 12px solid #F47821;
+    border-bottom: 12px solid #F47821;
     background-color: #000;
     padding: 0 50px;
-    color: var(--white);
+    color: #FFFFFF;
 }
 
 /*.Section2 .col-xs-12 {
@@ -126,14 +149,14 @@ h2.text-hunting {
 .Field-items {
     text-align: center;
     border: 1px solid transparent;
-    transition: var(--ease-in-out);
+    transition: all 0.3s ease-in-out;
 }
 .Field-items:hover {
-    border-color: var(--grey_5);
+    border-color: rgba(255, 255, 255, 0.5);
 }
 
 .Field-items a {
-    color: var(--white);
+    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -145,7 +168,7 @@ h2.text-hunting {
     position: absolute;
     background: #F47821b0;
     width: 48%;
-    color: var(--white);
+    color: #FFFFFF;
     font-size: 20px;
     padding: 20px;
     text-align: center;
@@ -153,10 +176,10 @@ h2.text-hunting {
 }
 .relative {
     border: 1px solid transparent;
-    transition: var(--ease-in-out);
+    transition: all 0.3s ease-in-out;
 }
 .relative:hover {
-    border-color: var(--grey_5);
+    border-color: rgba(255, 255, 255, 0.5);
 }
 
 @media(max-width:768px) {
@@ -170,7 +193,7 @@ h2.text-hunting {
 }
 
 .Section3 {
-    border-bottom: 12px solid var(--orange);
+    border-bottom: 12px solid #F47821;
 }
 
 .Buck-hunter {
@@ -229,14 +252,14 @@ h2.text-hunting {
     bottom: 0;
     right: 0;
     padding: 10px 30px 0px 30px;
-    background-color: var(--orange);
+    background-color: #F47821;
     color: #000;
 }
 
 .Section3 .Wild-outdoor .overlay h2 {
     font-size: 36px;
     font-weight: 900;
-    color: var(--white);
+    color: #FFFFFF;
 }
 
 .Section3 .Buck-hunter .overlay {
@@ -292,7 +315,7 @@ h2.text-hunting {
 }
 
 .Section4 {
-    border-bottom: 12px solid var(--orange);
+    border-bottom: 12px solid #F47821;
     padding: 40px 0px;
     background-color: #ffdabf;
 }
@@ -300,7 +323,7 @@ h2.text-hunting {
 .Wild-outdoors .Jay-gregory img,
 .Wild-outdoors .Wayatt img {
     width: 100%;
-    border: 6px solid var(--orange);
+    border: 6px solid #F47821;
     height: 300px;
 }
 
@@ -343,30 +366,30 @@ h2.text-hunting {
 }
 
 .Section5 {
-    border-bottom: 12px solid var(--orange);
+    border-bottom: 12px solid #F47821;
     padding: 40px 50px;
-    background-color: var(--dark);
+    background-color: #231F20;
 }
 
 .discout-form a.btn {
-    color: var(--white);
-    border: 1px solid var(--white);
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
     margin-top: 10px;
     border-radius: 0px;
     width: 100%;
     padding: 18px;
     font-size: 24px;
-    transition: var(--ease-in-out);
+    transition: all 0.3s ease-in-out;
 }
 
 .discout-form a.btn:hover {
-    color: var(--dark);
-    background-color: var(--white);
+    color: #231F20;
+    background-color: #FFFFFF;
 }
 
 .discout-form input#exampleInputEmail1 {
     border-radius: 0px;
-    border: 1px solid var(--dark);
+    border: 1px solid #231F20;
     padding: 18px;
     font-size: 24px;
 }
@@ -376,7 +399,7 @@ h2.text-hunting {
 }
 
 .First-save h1 {
-    color: var(--orange);
+    color: #F47821;
     font-weight: 900;
     font-size: 64px;
 }
@@ -384,7 +407,7 @@ h2.text-hunting {
 .First-save h2 {
     font-size: 54px;
     font-weight: 600;
-    color: var(--white);
+    color: #FFFFFF;
 }
 
 @media(max-width:500px) {
@@ -397,8 +420,8 @@ h2.text-hunting {
 }
 
 .Section6 {
-    border-bottom: 12px solid var(--white);
-    background-color: var(--white);
+    border-bottom: 12px solid #FFFFFF;
+    background-color: #FFFFFF;
 }
 
 .buck-Accessories {
@@ -436,7 +459,7 @@ h2.text-hunting {
 .row.Moderen-stylish {
     text-align: center;
     margin: 0px;
-    color: var(--white);
+    color: #FFFFFF;
     font-size: 24px;
     position: absolute;
     bottom: 0;
@@ -444,17 +467,17 @@ h2.text-hunting {
 }
 
 .Moderen {
-    background-color: var(--orange);
+    background-color: #F47821;
     padding: 20px;
 }
 
 .Patterns {
-    background-color: var(--green);
+    background-color: rgb(90,105,71);;
     padding: 20px;
 }
 
 .Stylish {
-    background-color: var(--lightgreen);
+    background-color: #A2A293;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -501,13 +524,13 @@ h2.text-hunting {
 }
 
 .Section7 {
-    border-bottom: 12px solid var(--white);
-    background-color: var(--dark);
+    border-bottom: 12px solid #FFFFFF;
+    background-color: #231F20;
     padding: 40px 0px;
 }
 
 .Wisconsin-hunter h1 {
-    color: var(--white);
+    color: #FFFFFF;
     font-size: 54px;
     font-weight: 600;
 }
@@ -518,7 +541,7 @@ h2.text-hunting {
 
 .Wisconsin-hunter p {
     font-size: 38px;
-    color: var(--white);
+    color: #FFFFFF;
     font-weight: 100;
 }
 
@@ -530,7 +553,7 @@ h2.text-hunting {
 }
 
 .Section8 {
-    border-bottom: 12px solid var(--white);
+    border-bottom: 12px solid #FFFFFF;
     background-image: url('https://swampbuckcamo.com/wp-content/uploads/2022/11/swampbuck_camo-scaled.jpg');
     background-position: center;
     background-size: cover;
@@ -540,7 +563,7 @@ h2.text-hunting {
     font-size: 38px;
     text-align: center;
     font-weight: 600;
-    color: var(--white);
+    color: #FFFFFF;
     padding-bottom: 30px;
 }
 
@@ -550,7 +573,7 @@ h2.text-hunting {
 
 .Gear-buck h1 {
     font-size: 28px;
-    color: var(--white);
+    color: #FFFFFF;
     font-weight: 600;
     text-align: center;
     margin-bottom: 0;
@@ -579,11 +602,11 @@ h2.text-hunting {
 }
 
 .Section9 {
-    border-bottom: 12px solid var(--white);
+    border-bottom: 12px solid #FFFFFF;
 }
 
 .Tag-buck {
-    background-color: var(--lightgreen);
+    background-color: #A2A293;
     text-align: center;
     padding: 10px 0px;
 }
@@ -598,22 +621,32 @@ h2.text-hunting {
 
 
 .footer_wrapper {
-    background-color: var(--dark);
+    background-color: #231F20;
     display: flex;
     justify-content: space-around;
     padding: 25px 0;
     border-top: 10px solid #fff;
 }
 
+footer .w_300 {
+    max-width: 300px;
+}
+footer .w_300 div {
+    font-weight: 900;
+    color: #CA9A2A;
+    font-family: calibri, sans-serif;
+}
+
+
 .footer_menu {
     display: flex;
 }
 .footer_menu a:hover {
-    color: var(--orange);
+    color: #F47821;
 }
 
 .footer_menu_1 {
-    border-right:1px solid var(--white);
+    border-right:1px solid #FFFFFF;
     padding-right: 30px;
 }
 .footer_menu_2 {
@@ -628,7 +661,7 @@ h2.text-hunting {
 
 .footer_menu_1 a,
 .footer_menu_2 a {
-    color: var(--white);
+    color: #FFFFFF;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
@@ -646,8 +679,8 @@ h2.text-hunting {
     padding-right: 10px;
 }
 
-.copyright {
-    background-color: var(--green);
+footer #copyright {
+    background-color: rgb(90,105,71);;
     height: 40px;
     display: flex;
     align-items: center;
@@ -679,6 +712,9 @@ h2.text-hunting {
     .footer_menu_2 {
         padding-left: 0;
         padding-bottom: 25px;
+    }
+    footer .w_300 {
+        margin: 0 auto;
     }
 }
 
