@@ -456,6 +456,11 @@ h2.text-hunting {
     color: #fff;
 }
 
+#errorHandle {
+    display: none;
+    color: #F47821;
+}
+
 @media(max-width:500px) {
     .Section5 {
         padding: 40px 15px;

@@ -189,8 +189,9 @@
               </div>
               <a class="btn" onclick="queryDiscountCode()">GET DISCOUNT CODE</a>
             </form>
+            <div id="errorHandle">There was a problem, please try again</div>
             <div id="reveal_discount_code">
-              <h3>Discount Code: Swamp20</h3>
+              <h3>Code: Swamp20</h3>
             </div>
           </div>
         </div>
@@ -353,7 +354,7 @@
             discount_codeEl.style.display = 'none'
             reveal_discount_codeEl.style.display = 'block'
           } else {
-
+            document.getElementById("errorHandle").style.display = 'block'
           }
         }
 
@@ -371,7 +372,6 @@
             return await res.json();
           } catch (error) {
             console.log(error);
-            // location.href = "https://" + new URL(location.href).hostname + "/" + location.href.split("/").slice(-1)[0].split("?")[0];
           }
         }
 
