@@ -768,6 +768,10 @@ footer #copyright {
         padding: 20px 20px;
     }
 
+    .middle {
+        bottom: 2rem;
+    }
+
     .middle .text a {
         padding: 10px 10px;
     }
@@ -783,7 +787,6 @@ footer #copyright {
 
     .row.Geared {
         padding: 50px 20px 40px;
-        margin-bottom: 50px;
     }
 
     .row.Geared h2 {
@@ -803,6 +806,11 @@ footer #copyright {
         width: 22%;
         transform: rotate3d(0, 0, 1, 90deg);
         margin: 60px 0;
+    }
+
+    .Moderen, .Patterns, .Stylish {
+        padding: 20px 10px;
+        font-size: 20px;
     }
 
     .footer_menu_1 a,
